@@ -7,6 +7,6 @@ urlScanAPIKey = 'API-KEY'
 vtAPIKey = 'API-KEY' 
 ```
 Tools to be intergrated:
--UrlScan.io
--VirusTotal
--More coming...
+- UrlScan.io
+- VirusTotal
+- More coming...
