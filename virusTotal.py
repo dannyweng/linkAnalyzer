@@ -2,9 +2,12 @@
 
 import requests, time, webbrowser
 import config
+
+if __name__ == '__main__':
+
 VirusTotalApiKey = config.vtAPIKey
 
-targetLink = input('What is the link being analyzed? ')
+# targetLink = input('What is the link being analyzed? ')
 linkUnshortener = requests.get('https://unshorten.me/json/{}'.format(targetLink))
 # print(linkUnshortener.text)
 linkUnshortener_json = linkUnshortener.json()
