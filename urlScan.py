@@ -2,7 +2,7 @@ import requests, webbrowser, time, config
 
 if __name__ == '__main__':
 
-    def urlScan(link):
+    def urlScanFunc(link):
         apikey = config.urlScanAPIKey
         
         urlRequest = link
@@ -29,3 +29,4 @@ if __name__ == '__main__':
         time.sleep(1)  # it takes a while for urlscan to finish preparing the results over 60 seconds normally
         webbrowser.open(url, new=0, autoraise=True)
         
+urlScanFunc('google.com')

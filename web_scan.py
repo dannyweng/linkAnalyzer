@@ -1,4 +1,4 @@
-# import importlib
+import importlib
 # urlScantool = importlib.import_module('urlScan.py')
 
 
@@ -13,10 +13,10 @@
 # def foo(): 
 #         #the body of the function
     
-# if __name__ == "__main__": 
+if __name__ == "__main__": 
 #     # the code in this section runs when this module is not imported
 #         foo()
 
 import urlScan
-
-urlScan('"google.com"')
+link = 'google.com'
+urlScanFunc(link)
