@@ -6,7 +6,7 @@ In order to handle this concern, create a file named config.py on the root direc
 urlScanAPIKey = 'API-KEY'
 vtAPIKey = 'API-KEY' 
 ```
-Tools to be intergrated:
+#### Tools to be intergrated:
 - UrlScan.io
 - VirusTotal
 - More coming...
