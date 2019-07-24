@@ -11,13 +11,11 @@ def urlScanFunc(link):
         'Content-Type': 'application/json',
         'API-Key': apikey,
     }
-    print(urlRequest)
+    # print(urlRequest)
     data = '{"url": "'+ f"{urlRequest}" + '", "public": "on", "tags": ["phishing", "malicious"]}'
-
     # print(data)
 
     response = requests.post('https://urlscan.io/api/v1/scan/', headers=headers, data=data)
-
     # print(response.text)
 
     response_json = response.json()
