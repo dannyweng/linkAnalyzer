@@ -17,7 +17,6 @@ def shortenLink(raw_link):
         '\nUnshortened link : ' + linkUnshortener_json['resolved_url'])
 
     resolvedLink = linkUnshortener_json['resolved_url']
-    # print('The resolved link is : ' + resolvedLink)
     
     if resolvedLink == '':
         print('The provided link is invalid, please check your input to see if you actually entered a link.')

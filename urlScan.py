@@ -6,7 +6,6 @@ def urlScanFunc(link):
     apikey = config.urlScanAPIKey
     
     urlRequest = link
-    # input('Enter a URL in this form (eg. google.com) :')   # '"google.com"'
 
     headers = {
         'Content-Type': 'application/json',
@@ -22,8 +21,6 @@ def urlScanFunc(link):
     # print(response.text)
 
     response_json = response.json()
-
-    # print(response_json['result'])
 
     url = response_json['result']
     time.sleep(1)  # it takes a while for urlscan to finish preparing the results over 60 seconds normally
