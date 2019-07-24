@@ -1,0 +1,3 @@
+# pipreqs
+requests==2.22.0
+config==0.4.2

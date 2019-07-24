@@ -1,8 +1,8 @@
 # Web Scan Tools - Python 3
 
-### You need to complete this step to make your script work
+## You need to complete the following steps to have the script run properly.
 It is important to not expose your API Keys!!! 
-In order to handle this concern, I have hid the 'config.py' from future git commits.
+To handle this concern, I have hidden the 'config.py' from future git commits.
 ### Create a file named 'config.py' on the root directory of this repo and add the following (replace 'API-KEY' with your keys):
 
 ```
@@ -10,9 +10,13 @@ urlScanAPIKey = 'API-KEY'
 vtAPIKey = 'API-KEY' 
 ```
 
-Make sure you have python 3 installed.
+Make sure you have python 3 and dependencies installed.
+Run the command below to install the dependencies:
+```
+pip install -r requirements.txt
+```
 The main script file is web_scan_tool.py
-To run the script, open cmd or powershell and enter :
+To run the script, open CMD, PowerShell or terminal and enter :
 ```
 python web_scan_tool.py
 ```
