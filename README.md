@@ -16,7 +16,8 @@ Run the command below to install the dependencies:
 pip install -r requirements.txt
 ```
 The main script file is web_scan_tool.py  
-To run the script, open CMD, PowerShell or terminal and enter :  
+To run the script:  
+Open CMD, PowerShell or terminal and enter :  
 ```
 python web_scan_tool.py
 ```
