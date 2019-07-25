@@ -1,4 +1,4 @@
-# Web Scan Tools - Python 3  
+# Link Analyzer - Python 3  
 
 ## You need to complete the following steps to have the script run properly.  
 It is important to not expose your API Keys!!!  
@@ -15,10 +15,10 @@ Run the command below to install the dependencies:
 ```
 pip install -r requirements.txt
 ```
-The main script file is web_scan_tool.py  
+The main script file is linkAnalyzer.py  
 To run the script, open CMD, PowerShell or terminal and enter :  
 ```
-python web_scan_tool.py
+python linkAnalyzer.py
 ```
 
 #### Tools to be intergrated:  
