@@ -13,7 +13,7 @@ except (Exception, error):
 	print ('error')
 	sys.exit(1)
 
-user_input = unShortenLink.shortenLink(input("Please provide a link you want analyzed : \n\n"))
+user_input = unShortenLink.shortenLink(input("\nPlease provide a link you want analyzed : \n\n"))
 
 # Comment out any of the tools below if you don't want the output from certain tools:
 
