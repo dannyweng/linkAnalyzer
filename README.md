@@ -29,4 +29,3 @@ python linkAnalyzer.py
 - unshorten.me
 - UrlScan.io
 - VirusTotal
-# - More coming...
