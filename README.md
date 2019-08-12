@@ -34,4 +34,7 @@ Open CMD, PowerShell or terminal and enter :
 
 ```
 python linkAnalyzer.py
-```
+```   
+
+#### Idea Board
+- whois
