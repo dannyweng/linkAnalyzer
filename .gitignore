@@ -3,6 +3,7 @@ config.py
 
 # Ignore test* files
 test*
+temp*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
