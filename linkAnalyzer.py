@@ -1,5 +1,10 @@
 #! /usr/bin/env python
 
+# Link Analyzer Script/Toolkit
+# Author: Danny Weng
+# Reference:
+# https://github.com/dannyweng
+
 # import modules
 try:
 	## import argparse for future implementations

@@ -6,7 +6,6 @@
  - [How to Use](#how-to-use-script)
 
 ## linkAnalyzer can Currently:
-
   - Unshorten URL's that have been shortened by external services.
   - Perform reputation checks from:
     - [VirusTotal](https://www.virustotal.com)
@@ -19,13 +18,15 @@
  - Install all dependencies from the requirements.txt file. `pip install -r requirements.txt`
 ### You need to complete the following steps to have the script run properly.  
 It is important to not expose your API Keys!  
-To handle this concern, I have hidden the 'config.py' from future git commits.
+To handle this concern, I've placed the API keys in a file named 'config.py'.
 #### Create a file named 'config.py' on the root directory of this repo and add the following (replace 'API-KEY' with your keys):  
 
 ```
 urlScanAPIKey = 'API-KEY'
 vtAPIKey = 'API-KEY' 
 ```
+
+=======
 
 ## How to use script
 The main script file is linkAnalyzer.py  
