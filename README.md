@@ -10,8 +10,10 @@
   - Perform reputation checks from:
     - [VirusTotal](https://www.virustotal.com)
     - [URLscan](https://www.urlscan.io/)
+    - [WhoIs](https://en.wikipedia.org/wiki/WHOIS)
   - Get links and compare them against [VirusTotal](https://www.virustotal.com) (see requirements)
   - Get links and compare them against [URLscan](https://www.urlscan.io/) to see screenshot of page.   
+  - Query [WhoIs] database for domain information.
 
 ## Requirements
  - [Python 3.x](https://www.python.org/)
@@ -38,4 +40,4 @@ python linkAnalyzer.py
 ```   
 
 #### Idea Board
-- whois
+- ?
