@@ -13,6 +13,7 @@ try:
     from modules import urlScan
     from modules import unShortenLink
     from modules import virusTotal
+    from modules import whoisquery
     
 
 # Any import errors print to screen and exit
@@ -36,8 +37,8 @@ def ExecuteCommandSubprocess(command, *args):
 layout = [      
     [sg.Text('1. Input URL    2. Click on desired script or hit ENTER to run all', size=(50, 1))],      
     [sg.Output(size=(88, 20))],      
-    [sg.Button('unShorten Link'), sg.Button('urlScan'), sg.Button('VirusTotal'), sg.Button('EXIT')],      
-    [sg.Text('Paste link here:', size=(15, 1)), sg.InputText(focus=True), sg.Button('Run All', bind_return_key=True)]      
+    [sg.Button('unShorten Link'), sg.Button('urlScan'), sg.Button('VirusTotal'), sg.Button('WhoIs')],      
+    [sg.Text('Paste link here:', size=(15, 1)), sg.InputText(focus=True), sg.Button('Run All', bind_return_key=True), sg.Button('EXIT')]      
         ]      
 
 
@@ -56,9 +57,12 @@ while True:
       urlScan.urlScanFunc(value[0])    ## urlScan.io 
   elif event == 'VirusTotal':  
       virusTotal.vtFunc(value[0])    ## VirusTotal
+  elif event == 'WhoIs':  
+      whoisquery.whois(value[0])    ## WhoIs
   elif event == 'Run All':      
     #   ExecuteCommandSubprocess(value[0])
       user_input = unShortenLink.shortenLink(value[0]) # unshorten link
       urlScan.urlScanFunc(user_input)    ## urlScan.io
       virusTotal.vtFunc(user_input)    ## VirusTotal
+      whoisquery.whois(user_input)    ## WhoIs
       print ('\nThe script opened up a few tabs for you to review.\n\nfyi: it takes urlscan about a whole minute to scan the site so wait a minute and refresh page')

@@ -12,6 +12,8 @@ try:
 	from modules import urlScan
 	from modules import unShortenLink
 	from modules import virusTotal
+	from modules import whoisquery
+
 
 # Any import errors print to screen and exit
 except (Exception, error):
@@ -24,6 +26,7 @@ user_input = unShortenLink.shortenLink(input("\nPlease provide a link you want a
 
 urlScan.urlScanFunc(user_input)    ## urlScan.io
 virusTotal.vtFunc(user_input)    ## VirusTotal
+whoisquery.whois(user_input)	## whois
 
 print('\nThe script opened up a few tabs for you to review.\n\n\
 fyi: it takes urlscan about a whole minute to scan the site so wait a minute and refresh page')
